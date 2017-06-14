@@ -1,0 +1,267 @@
+/*this applies to the entire page it will keep box elements from adding pixels to whatever is set. that way a 200px wide box won't suddenly become a 202px wide box if you add a 1px border*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+height: 100%;
+}
+
+body {
+  font-size: 18px;
+  line-height: 34px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #777777;
+  background-image: url("../images/scribble_light_background.png");
+  background-repeat: repeat;
+  min-height: 100%;
+}
+
+/*the containers are the the header, the content box and footer */
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+h1, h2, h3, p {
+  margin-bottom: 20px;
+}
+
+/*So there is no margin at the final paragraph*/
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-weight: bold;
+  color: #4aaaa5;
+}
+h1 {
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #dddddd;
+  padding-bottom: 20px;
+}
+
+h2, h3 {
+  font-size: 22px;
+}
+
+/*this is the header*/
+#masthead {
+  background: #ffffff;
+  margin: 0 0 30px;
+  z-index: 99;
+  color: #fff;
+  overflow: auto;
+  border-bottom: 2px solid #cccccc;
+  width: 100%;
+}
+
+/* the green box with my name on it*/
+#logo {
+  width: 250px;
+  height: 90px;
+  background: #4aaaa5;
+  float: left;
+  text-align: center;
+  /*font setting for id tags override the main font setting*/
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  line-height: 90px;
+  /* why not just use 'white'???*/
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 30px;
+  /*this gets rid of the annoying underline on links*/
+  text-decoration: none;
+}
+/*navvy nav bar*/
+nav {
+  float: right;
+  line-height: 90px
+}
+/* adjust linky text element in the navbar*/
+nav a {
+  color: #666666;
+  text-decoration: none;
+  margin-left: 15px;
+  display: inline-block;
+  border-left: 1px solid silver;
+  line-height: 16px;
+  padding-left: 15px;
+}
+
+/* this makes an exception for the first child element*/
+nav a :first-child {
+  border-left: 0 none;
+}
+
+/* the big box of content where everything goes into*/
+#main-container {
+  padding-top: 30px;
+}
+
+/* subtitle, paragraphs, portfolio pics and input boxes go here*/
+.main-section {
+  background: #ffffff;
+  padding: 30px;
+  margin: 0 0 40px 0;
+  width: 100%;
+  max-width: 650px;
+  float: left;
+  border: 1px solid #dddddd;
+}
+
+.about-images {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  float: left;
+  margin-right: 25px;
+}
+
+.portfolio-images {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+  float: left;
+}
+
+/*this is the aside*/
+
+#connect {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.sidebar {
+  background: #ffffff;
+  padding: 30px;
+  width: 100%;
+  max-width: 270px;
+  float:right;
+  border: 1px solid #dddddd;
+  margin-bottom: 20px;
+}
+
+h3, .sidebar, h2 {
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 15px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.social {
+  width: 64px;
+  height: 64px;
+  float: left;
+}
+
+.image-link-container {
+  height: 125px;
+  text-align: justify;
+  min-width: 208px;
+}
+.image-link-container a {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+.image-link-container:after {
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+
+/* the bottom of the pages*/
+footer {
+  background: #666666;
+  color: #ffffff;
+  padding: 30px 0;
+  clear:both;
+  border-top: 8px solid #4aaaa5;
+  color: #cccccc;
+  font-size: 12px;
+  text-align: center;
+
+}
+
+/* porfolio*/
+.work {
+  width: 274px;
+  overflow: auto;
+  position: relative;
+  float: left;
+  margin: 20px 0 25px;
+}
+ .work:nth-child(even) {
+   margin-right: 40px;
+ }
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: .8;
+}
+
+.work h3 {
+  border-bottom: 0;
+  background: #4aaaa5;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  padding: 15px;
+  width: 100%;
+  line-height: 30px;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+/*contact page*/
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input [type=text],
+input[type=emaill],
+textarea {
+  height: 35px;
+  border: 1px solid #dddddd;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  background: #4aaaa5;
+  border: 0 none;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 30px;
+  cursor: pointer;
+}

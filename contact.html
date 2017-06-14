@@ -20,16 +20,25 @@
 	</header>
 	<div id="main-container" class=container>
 		<section class="main-section">
-			<h1>About Me</h1>
+			<h1>Contact</h1>
 
-			<img src="assets/images/pictureofme.jpg" class="about-images" alt="A picture of me">
-
-			<p>Cake pudding topping jelly. Marshmallow cheesecake gingerbread toffee bear claw donut sweet liquorice. Toffee sugar plum caramels. Cookie sugar plum macaroon chocolate bar. Fruitcake cookie cotton candy dragée sweet powder jelly-o. Apple pie chocolate
-				jelly-o tiramisu macaroon gummi bears pastry halvah croissant. Chocolate bar cupcake cookie. Jelly chupa chups wafer danish lollipop carrot cake pie danish. Bear claw bear claw marzipan candy. Topping caramels caramels lemon drops candy sweet roll
-				oat cake.</p>
-
-			<p>Pie chocolate bar wafer. Dragée halvah muffin toffee fruitcake. Croissant jelly gummi bears cake jelly jelly powder. Tart fruitcake bear claw ice cream. Pastry tootsie roll tootsie roll gummi bears cotton candy chupa chups fruitcake jelly beans toffee.
-				Oat cake tootsie roll icing marzipan.</p>
+			<form action="mailto:yakoloi@gmail.com" method="post" enctype="text/plain" id="contact-form">
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" placeholder="John Smith" required="required" />
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" placeholder="example@mail.com" required="required" />
+					</li>
+					<li>
+						<label for="message">Message</label>
+						<textarea name="message" id="message" required="required"></textarea>
+					</li>
+				</ul>
+				<input type="submit" name="submit">
+			</form>
 
 		</section>
 
