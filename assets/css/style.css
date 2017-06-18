@@ -114,7 +114,7 @@ nav a :first-child {
   padding: 30px;
   margin: 0 0 40px 0;
   width: 100%;
-  max-width: 650px;
+  width: 650px;
   float: left;
   border: 1px solid #dddddd;
 }
@@ -149,8 +149,7 @@ nav a :first-child {
 .sidebar {
   background: #ffffff;
   padding: 30px;
-  width: 100%;
-  max-width: 270px;
+  width: 270px;
   float:right;
   border: 1px solid #dddddd;
   margin-bottom: 20px;
@@ -273,8 +272,20 @@ input[type=submit] {
   background-color: #3C7C8A;
 }
 
-/* Media queries */
+/* Media queries 640px width */
 @media screen and (max-width: 640px) {
+
+  h1, h2, h3 {
+    color:red;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+
+  }
+
  #logo {
    width: 100%;
  }
@@ -300,7 +311,9 @@ input[type=submit] {
  }
 
 #main-container {
-  padding-top: 0px;
+  padding: 0px;
+  clear:both;
+  width: 100%;
 }
 
 .about-images {
@@ -308,34 +321,34 @@ input[type=submit] {
   height: auto;
   margin-top: 0px;
   margin-right: auto;
-  margin-left: auto:;
+  margin-left: auto;
 }
 
 .main-section {
   background: #ffffff;
   padding: 20px;
-  width: 100%;
-  max-width: 580px;
+  width: 95%;
   border: 1px solid #dddddd;
   margin-left: 15px;
   margin-top: 30px;
+  float:left;
 }
 
 .sidebar {
   background: #ffffff;
-  padding: 20px;
-  width: 100%;
-  max-width: 580px;
+  padding: 0px;
+  width: 95%;
   border: 1px solid #dddddd;
   margin-bottom: 30px;
   margin-left: 15px;
-  float:left;
+  margin-right: 15px;
+  float: left;
   }
 
   .image-link-container {
     height: 80px;
     text-align: justify;
-    min-width: 208px;
+    max-width: 100%;
   }
   .image-link-container a {
     width: 64px;
@@ -345,5 +358,266 @@ input[type=submit] {
  .social {
    margin-right: 10px;
  }
+ #connect {
+   margin-left:0;
+   margin-right:0;
+   max-width: 100%;
+ }
+
+ .work {
+   width: 100%;
+   margin-right: 0;
+ }
+ .portfolio-images {
+   width: 200px;
+   height: auto;
+   margin-top: 10px;
+   margin-right: 0px;
+   float: left;
+ }
+
+ h2 {
+   width: 96%;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px;
+ }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+
+  h1, h2, h3 {
+    color:blue;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+
+  }
+
+ #logo {
+   width: 30%;
+   margin-left: 15px;
+ }
+ #masthead {
+   margin-bottom: 0px;
+ }
+
+ nav {
+  width: 40%;
+  line-height: 90px;
+  padding: 0;
+  text-align: center;
+  margin-right: 15px;
+  float:right;
+ }
+
+ nav a {
+   color: #666666;
+   text-decoration: none;
+   margin-left: 0px;
+   border-left: 1px solid silver;
+   line-height: 16px;
+   padding-left: auto;
+   padding-right: auto;
+ }
+
+#main-container {
+  padding: 0px;
+  clear:both;
+  width: 100%;
+}
+
+.about-images {
+  width: 40%;
+  height: auto;
+  margin-top: 0px;
+  margin-right: 10px;  margin-left: auto;
+}
+
+.main-section {
+  background: #ffffff;
+  padding: 20px;
+  width: 96%;
+  border: 1px solid #dddddd;
+  margin-left: 15px;
+  margin-top: 30px;
+  float:left;
+}
+
+.sidebar {
+  background: #ffffff;
+  padding: 0px;
+  width: 96%;
+  border: 1px solid #dddddd;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  float: left;
+  }
+
+  .image-link-container {
+    height: 80px;
+    text-align: justify;
+    max-width: 100%;
+    margin-left: 15px;
+  }
+  .image-link-container a {
+    width: 64px;
+    height: 64px;
+    display: inline;
+  }
+ .social {
+   margin-right: 10px;
+ }
+ #connect {
+   margin-left:0;
+   margin-right:0;
+   max-width: 100%;
+ }
+
+ .work {
+   width: 46%;
+   margin-right: 0;
+ }
+ .portfolio-images {
+   width: 100%;
+   height: auto;
+   margin-top: 10px;
+   margin-right: 0px;
+   float: left;
+ }
+
+  h2 {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+
+  .work:nth-child(even) {
+    margin-right: 0px;
+  }
+  .work:nth-child(odd) {
+    float:right;
+  }
+}
+
+/*mediaquery width 980*/
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  h1, h2, h3 {
+    color:green;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+
+  }
+
+ #logo {
+   width: 30%;
+   margin-left: 100px;
+ }
+ #masthead {
+   margin-bottom: 0px;
+ }
+
+ nav {
+  width: 40%;
+  line-height: 90px;
+  padding: 0;
+  text-align: center;
+  margin-right: 20px;
+  float:right;
+ }
+
+ nav a {
+   color: #666666;
+   text-decoration: none;
+   margin-left: 0px;
+   border-left: 1px solid silver;
+   line-height: 16px;
+   padding-left: auto;
+   padding-right: auto;
+ }
+
+#main-container {
+  padding: 0px;
+  clear:both;
+  width: 100%;
+}
+
+.about-images {
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+  margin-right: 10px;  margin-left: auto;
+}
+
+.main-section {
+  background: #ffffff;
+  padding: 20px;
+  width: 40%;
+  border: 1px solid #dddddd;
+  margin-left: 100px;
+  margin-top: 30px;
+  float:left;
+}
+
+.sidebar {
+  background: #ffffff;
+  padding: 20px;
+  width: 30%;
+  border: 1px solid #dddddd;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  margin-top: 30px;
+  float: left;
+  }
+
+  .image-link-container {
+    height: 80px;
+    text-align: justify;
+    max-width: 100%;
+    margin-left: 0px;
+  }
+  .image-link-container a {
+    width: 64px;
+    height: 64px;
+  }
+ .social {
+   margin-right: 10px;
+ }
+ #connect {
+   margin-left:0;
+   margin-right:0;
+   max-width: 100%;
+ }
+
+ .work {
+   width: 100%;
+   margin-right: 0;
+ }
+ .portfolio-images {
+   width: 100%;
+   height: auto;
+   margin-top: 10px;
+   margin-right: 0px;
+   float: left;
+ }
+
+  h2 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .work:nth-child(even) {
+    margin-right: 0px;
+  }
 
 }
