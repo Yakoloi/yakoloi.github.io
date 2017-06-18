@@ -79,10 +79,13 @@ h2, h3 {
   /*this gets rid of the annoying underline on links*/
   text-decoration: none;
 }
+#logo:hover {
+  background: #3C7C8A;
+}
 /*navvy nav bar*/
 nav {
   float: right;
-  line-height: 90px
+  line-height: 90px;
 }
 /* adjust linky text element in the navbar*/
 nav a {
@@ -264,4 +267,83 @@ input[type=submit] {
   font-size: 18px;
   padding: 10px 30px;
   cursor: pointer;
+}
+
+.hover:hover {
+  background-color: #3C7C8A;
+}
+
+/* Media queries */
+@media screen and (max-width: 640px) {
+ #logo {
+   width: 100%;
+ }
+ #masthead {
+   margin-bottom: 0px;
+ }
+
+ nav {
+  width: 100%;
+  line-height: 90px;
+  padding: 0;
+  text-align: center;
+ }
+
+ nav a {
+   color: #666666;
+   text-decoration: none;
+   margin-left: 0px;
+   border-left: 0px solid silver;
+   line-height: 16px;
+   padding-left: auto;
+   padding-right: auto;
+ }
+
+#main-container {
+  padding-top: 0px;
+}
+
+.about-images {
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto:;
+}
+
+.main-section {
+  background: #ffffff;
+  padding: 20px;
+  width: 100%;
+  max-width: 580px;
+  border: 1px solid #dddddd;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+
+.sidebar {
+  background: #ffffff;
+  padding: 20px;
+  width: 100%;
+  max-width: 580px;
+  border: 1px solid #dddddd;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  float:left;
+  }
+
+  .image-link-container {
+    height: 80px;
+    text-align: justify;
+    min-width: 208px;
+  }
+  .image-link-container a {
+    width: 64px;
+    height: 64px;
+    display: inline;
+  }
+ .social {
+   margin-right: 10px;
+ }
+
 }

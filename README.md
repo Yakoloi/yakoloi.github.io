@@ -1,2 +1,2 @@
-# yakoloi.github.io
-Github web host
+# Responsive-Portfolio
+Responsive Portfolio homework
