@@ -1,2 +1,2 @@
-# Responsive-Portfolio
-Responsive Portfolio homework
+# Bootstrap-Portfolio
+Bootstrap-Portfolio Homework
