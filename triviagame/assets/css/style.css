@@ -1,0 +1,31 @@
+.btn {
+    width: 250px;
+    margin-top: 10px;
+}
+
+.jumbotron {
+    margin-top: 20px;
+    background: rgba(500, 500, 500, 0.75);
+    height: 520px;
+}
+
+#splash {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#badge {
+    margin-right: auto;
+    margin-left: auto;
+    height: 200px;
+}
+
+body {
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+html {
+    color: pink;
+}
