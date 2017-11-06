@@ -93,6 +93,11 @@ form {
   padding: 20px 5px;
 }
 
+.thumb {
+  max-width: 344px;
+  max-height: 193px;
+}
+
 @media (max-width: 768px) {
   nav {
     padding-left: 0;
